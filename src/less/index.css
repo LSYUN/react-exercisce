@@ -1,0 +1,21 @@
+.home-route {
+    height: 1000px;
+    position: relative;
+}
+
+.back-to-home {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.back-to-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.piece-grid {
+    background: bisque;
+}
