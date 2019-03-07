@@ -1,0 +1,54 @@
+li {
+    list-style: none;
+}
+
+.home-route {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    writing-mode: tb;
+    text-align: center;
+    //display: inline-block;
+    //margin: 0 auto;
+    //padding: 10px 0;
+
+    & ul {
+        width: 100%;
+        height: 100%;
+        //writing-mode: lr;
+        //text-align: center;
+        display: inline;
+    }
+
+    & li span {
+        cursor: default;
+        font-size: 1rem;
+        //writing-mode: lr;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    & hr {
+        border: none;
+        border-top: 1px #c3c3c3 dashed;
+    }
+}
+
+.back-to-home {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.back-to-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.piece-grid {
+    background: bisque;
+}
