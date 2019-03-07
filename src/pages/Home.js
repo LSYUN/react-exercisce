@@ -17,7 +17,7 @@ export default class Home extends Component {
         <li><span onClick={() => this.props.history.push('/redux/firstRedux')}>FirstRedux</span></li>
         <hr/>
 
-        <li><span onClick={() => this.props.history.push('/ant_design/form')}>TabsComponent</span></li>
+        <li><span onClick={() => this.props.history.push('/ant_design/tabs')}>TabsComponent</span></li>
         <li><span onClick={() => this.props.history.push('/ant_design/icon')}>IconDelete</span></li>
         <li><span onClick={() => this.props.history.push('/ant_design/form')}>FormComponent</span></li>
         <li><span onClick={() => this.props.history.push('/ant_design/table')}>Table</span></li>
@@ -30,6 +30,8 @@ export default class Home extends Component {
         <li><span onClick={() => this.props.history.push('/react_rnd/first_rnd')}>FirstRND</span></li>
         <li><span onClick={() => this.props.history.push('/react_rnd/grid_rnd')}>GridAndRND</span></li>
         <hr/>
+
+        <li><span onClick={() => this.props.history.push('/bos')}>bos.xyz</span></li>
 
         {/*<a className="back-to-top" href="#">回到顶部</a>*/}
       </div>)

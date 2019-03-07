@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-// import {Tabs, Input} from 'antd';
+import {Tabs} from 'antd';
 
-// const TabPane = Tabs.TabPane;
+const TabPane = Tabs.TabPane;
 
 export default class TabsComponent extends Component {
   constructor(props) {
@@ -67,17 +67,17 @@ export default class TabsComponent extends Component {
 
   render() {
     return (
-      <div
+      <Tabs
         type="editable-card"
         // activeKey={this.state.activeKey}
         renderTabBar={(props, DefaultTabBar) => <DefaultTabBar {...props} onKeyDown={e => e}/>}
       >
-        {/*{*/}
-          {/*this.state.mockPaneData.map(((pane, key) => {*/}
-            {/*return <TabPane key={key.toString()} tab={this.renderTab(pane.title, key)}>{pane.content}</TabPane>*/}
-          {/*}))*/}
-        {/*}*/}
-      </div>
+        {
+          this.state.mockPaneData.map(((pane, key) => {
+            return <TabPane key={key.toString()} tab={this.renderTab(pane.title, key)}>{pane.content}</TabPane>
+          }))
+        }
+      </Tabs>
     )
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Icon, Button } from 'antd';
+import {Icon, Button} from 'antd';
 
 export default class IconDelete extends Component {
     deleteVisualization = id => e => {
@@ -15,7 +15,7 @@ export default class IconDelete extends Component {
         return (
             <div>
                 <Icon type="delete" theme="outlined" onClick={this.deleteVisualization(id)} />
-                <Button onClick={() => this.callDeleteWithoutEvent(id)}>删除</Button>
+                <Button type="primary" onClick={() => this.callDeleteWithoutEvent(id)}>删除</Button>
             </div>
         )
     }

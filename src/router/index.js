@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Redirect, Switch} from 'react-router-dom'; // [npm install react-router-dom]
 
-import AsyncImport from '../components/AsyncImport';
+import AsyncImport from 'src/components/AsyncImport';
 
 const routes = [
   {
@@ -12,15 +12,15 @@ const routes = [
   },
   {
     path: '/home',
-    component: AsyncImport(() => import('../pages/Home')),
+    component: AsyncImport(() => import('src/pages/Home')),
   },
   {
     path: '/refs',
-    component: AsyncImport(() => import('../pages/refs/RefParent')),
+    component: AsyncImport(() => import('src/pages/refs/RefParent')),
   },
   {
     path: '/redux/about/:id',
-    component: AsyncImport(() => import('../pages/redux/About')),
+    component: AsyncImport(() => import('src/pages/redux/About')),
     routes: [
       {
         tag: 'Route',
@@ -31,36 +31,40 @@ const routes = [
   },
   {
     path: '/react_grid_layout/first_grid',
-    component: AsyncImport(() => import('../pages/react_grid_layout/FirstGrid'))
+    component: AsyncImport(() => import('src/pages/react_grid_layout/FirstGrid'))
   },
   {
     path: '/react_rnd/first_rnd',
-    component: AsyncImport(() => import('../pages/react_rnd/FirstRND'))
+    component: AsyncImport(() => import('src/pages/react_rnd/FirstRND'))
   },
   {
     path: '/react_rnd/grid_rnd',
-    component: AsyncImport(() => import('../pages/react_rnd/GridAndRND'))
+    component: AsyncImport(() => import('src/pages/react_rnd/GridAndRND'))
   },
   {
     path: '/jquery/drag_box',
-    component: AsyncImport(() => import('../pages/jquery/DragBox'))
+    component: AsyncImport(() => import('src/pages/jquery/DragBox'))
   },
 
   {
     path: '/ant_design/form',
-    component: AsyncImport(() => import('../pages/ant_design/FormComponent'))
+    component: AsyncImport(() => import('src/pages/ant_design/FormComponent'))
   },
   {
     path: '/ant_design/icon',
-    component: AsyncImport(() => import('../pages/ant_design/IconDelete'))
+    component: AsyncImport(() => import('src/pages/ant_design/IconDelete'))
   },
   {
     path: '/ant_design/table',
-    component: AsyncImport(() => import( '../pages/ant_design/TableExercise'))
+    component: AsyncImport(() => import( 'src/pages/ant_design/TableExercise'))
   },
   {
     path: '/ant_design/tabs',
-    component: AsyncImport(() => import('../pages/ant_design/TabsComponent'))
+    component: AsyncImport(() => import('src/pages/ant_design/TabsComponent'))
+  },
+  {
+    path: '/bos',
+    component: AsyncImport(()=>import('src/pages/bos/Test1'))
   },
 ];
 
