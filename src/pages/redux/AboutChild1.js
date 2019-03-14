@@ -41,6 +41,7 @@ export default class AboutChild1 extends Component {
     return (
       <div>
         当前: <span onClick={() => this.props.childEvent('text from child')}>{this.state.count}</span>
+        {this.props.errorObj.a}
       </div>
     )
   }

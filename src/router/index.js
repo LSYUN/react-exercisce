@@ -63,8 +63,12 @@ const routes = [
     component: AsyncImport(() => import('src/pages/ant_design/TabsComponent'))
   },
   {
-    path: '/bos',
+    path: '/bos/villa',
     component: AsyncImport(()=>import('src/pages/bos/Test1'))
+  },
+  {
+    path: '/bos/pipes',
+    component: AsyncImport(()=>import('src/pages/bos/Test2'))
   },
 ];
 

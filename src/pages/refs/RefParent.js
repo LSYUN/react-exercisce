@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import MyModal from './MyModal';
+import MyModal from '../../components/MyModal';
 import RefChild from './RefChild';
 import RefPropsChild from './RefPropsChild';
 

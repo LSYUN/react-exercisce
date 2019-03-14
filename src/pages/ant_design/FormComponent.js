@@ -17,11 +17,11 @@ export default class FormComponent extends Component{
     {key:'头像', value:'Avatar'},
   ];
   render(){
-    return (
-      <div>
-        <Col span={12}></Col>
-      </div>
-    )
+    return [
+      <li key="A">First item</li>,
+      <a key="B">Second item</a>,
+      <div key="C">Third item</div>
+    ]
   }
 
 }
