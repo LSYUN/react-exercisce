@@ -22,6 +22,7 @@ export default class Home extends Component {
             <li><span onClick={() => this.props.history.push('/ant_design/icon')}>IconDelete</span></li>
             <li><span onClick={() => this.props.history.push('/ant_design/form')}>FormComponent</span></li>
             <li><span onClick={() => this.props.history.push('/ant_design/table')}>Table</span></li>
+            <li><span onClick={() => this.props.history.push('/ant_design/tree')}>Tree</span></li>
             <hr/>
 
             <li><span onClick={() => this.props.history.push('/jquery/drag_box')}>DragBox</span></li>

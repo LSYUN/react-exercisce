@@ -57,10 +57,20 @@ export default class Test1 extends Component {
     this.vizbim.isolationObjs(real.data.data.slice(0, 2))
   };
 
-  requestPreExtract = async () => {
+  getOutLines2 = async()=>{
+      const pre = await this.requestPreExtract();
+    console.log('pre', pre);
+      const real = await this.requestExtract(pre);
+    console.log('real', real);
+  };
+
+  requestPreExtract = async (pre) => {
+    console.log('pre in real', pre);
     const url = `/models/${this.fileKey}/outlines/!parse?devcode=${this.devCode}`;
-    const res = await axios.get(urlRoot + url);
-    return res.data;
+    return await axios.get(urlRoot + url).then(res => {
+
+      return res.data;
+    });
   };
 
   requestExtract = async () => {

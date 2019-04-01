@@ -63,6 +63,10 @@ const routes = [
     component: AsyncImport(() => import('src/pages/ant_design/TabsComponent'))
   },
   {
+    path: '/ant_design/tree',
+    component: AsyncImport(() => import('src/pages/ant_design/TreeComponent'))
+  },
+  {
     path: '/bos/villa',
     component: AsyncImport(()=>import('src/pages/bos/Test1'))
   },
